@@ -1,0 +1,14 @@
+# OS
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# PDF source (too large)
+Simbiosis_Catalogo.pdf

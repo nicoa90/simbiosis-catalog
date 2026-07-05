@@ -1,0 +1,50 @@
+# openspec/config.yaml
+schema: spec-driven
+
+context: |
+  Static product catalog for Simbiosis Cocina (plant-based pastry).
+  Stack: Pure HTML + CSS + JavaScript, js-yaml from CDN, no build tools.
+  Architecture: YAML-driven runtime rendering, category filtering, WhatsApp
+  per-product links, Tiendup iFrame + postMessage auto-sizing embed.
+  Style: Earthy/natural/clean, mobile-first responsive (1/2/3 col).
+  UI language: Spanish (Argentina). Deploy: Netlify drag-and-drop of src/.
+  No package.json, no test runner, no CI detected.
+
+rules:
+  proposal:
+    - Include rollback plan for risky changes
+    - Keep proposals concise — max 1 page for small changes
+  specs:
+    - Use Given/When/Then for scenarios
+    - Use RFC 2119 keywords (MUST, SHALL, SHOULD, MAY)
+  design:
+    - Include sequence diagrams for complex flows
+    - Document architecture decisions with rationale
+  tasks:
+    - Group by phase, use hierarchical numbering
+    - Keep tasks completable in one session
+  apply:
+    - Follow existing code patterns
+    - Pure HTML/CSS/JS — no build tools or frameworks
+    tdd: false
+    test_command: ""
+  verify:
+    test_command: ""
+    build_command: ""
+    coverage_threshold: 0
+  archive:
+    - Warn before merging destructive deltas
+
+testing:
+  strict_tdd: false
+  runner: none
+  reason: "No test runner, no package.json, no CI detected. Pure static HTML/CSS/JS project with no testing infrastructure."
+  layers:
+    unit: { available: false, tool: "-" }
+    integration: { available: false, tool: "-" }
+    e2e: { available: false, tool: "-" }
+  coverage: { available: false, command: "-" }
+  quality:
+    linter: { available: false, command: "-" }
+    type_checker: { available: false, command: "-" }
+    formatter: { available: false, command: "-" }

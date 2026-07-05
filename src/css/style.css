@@ -1,0 +1,429 @@
+/* ========================================
+   Simbiosis Cocina — Catálogo de Productos
+   Estilos: editorial magazine layout
+   ======================================== */
+
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  background-color: #faf8f5;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ===========================================
+   Contenedor principal
+   =========================================== */
+
+#app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.loading {
+  text-align: center;
+  padding: 80px 20px;
+  color: #888;
+  font-size: 1.1rem;
+}
+
+/* ===========================================
+   Mensajes de estado
+   =========================================== */
+
+.app-message {
+  text-align: center;
+  padding: 80px 20px;
+  font-size: 1.1rem;
+  color: #888;
+}
+
+.app-message--empty {
+  color: #999;
+}
+
+/* ===========================================
+   Header / encabezado del catálogo
+   =========================================== */
+
+.catalog-header {
+  padding: 4px 0;
+}
+
+/* ===========================================
+   Intro editorial del catálogo
+   =========================================== */
+
+.catalog-intro {
+  max-width: 720px;
+  margin: 0 auto 32px;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.catalog-intro p {
+  font-family: 'Playfair Display', Georgia, Times, serif;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.catalog-intro p:last-child {
+  margin-bottom: 0;
+}
+
+/* ===========================================
+   Barra de filtros (editorial — underline active)
+   =========================================== */
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: center;
+  padding: 16px 0 32px;
+}
+
+.filter-bar button {
+  padding: 8px 16px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: #888;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-family: inherit;
+  white-space: normal;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.filter-bar button:hover {
+  color: #4a6741;
+}
+
+.filter-bar button.active {
+  color: #4a6741;
+  border-bottom-color: #4a6741;
+}
+
+/* ===========================================
+   Sección de producto (editorial full-width)
+   =========================================== */
+
+.product-section {
+  padding: 64px 0;
+}
+
+
+
+/* ===========================================
+   Contenido de dos columnas — flexbox
+   =========================================== */
+
+.section-content {
+  display: flex;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.photo-column {
+  flex: 3;
+  min-width: 0;
+}
+
+.info-column {
+  flex: 2;
+  min-width: 0;
+}
+
+/* Alternating column order via CSS classes */
+.layout-photos-first {
+  flex-direction: row;
+}
+
+.layout-info-first {
+  flex-direction: row-reverse;
+}
+
+/* ===========================================
+   Fotos
+   =========================================== */
+
+.main-photo {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #f0ede8;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+.main-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.main-photo .image-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0ede8;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.secondary-photos {
+  display: flex;
+  gap: 8px;
+}
+
+.secondary-slot {
+  flex: 1;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #f0ede8;
+  border-radius: 4px;
+}
+
+.secondary-slot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.secondary-slot .image-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0ede8;
+  color: #aaa;
+  font-size: 0.85rem;
+}
+
+/* ===========================================
+   Info column — tipografía editorial
+   =========================================== */
+
+.info-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.info-column h2 {
+  font-family: 'Playfair Display', Georgia, Times, serif;
+  font-size: 1.6rem;
+  color: #4a6741;
+  font-weight: 700;
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 0.85rem;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.info-column .description {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* ===========================================
+   Presentaciones (lista de precios)
+   =========================================== */
+
+.presentaciones {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.presentaciones li {
+  padding: 6px 0;
+  font-size: 0.9rem;
+  color: #555;
+  border-bottom: 1px solid #f0ede8;
+}
+
+.presentaciones li:last-child {
+  border-bottom: none;
+}
+
+.presentaciones li strong {
+  color: #4a6741;
+  font-weight: 700;
+}
+
+/* ===========================================
+   Botón WhatsApp por producto (info column)
+   =========================================== */
+
+.info-column .whatsapp-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 4px;
+  background: #4a6741;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: background 0.2s;
+}
+
+.info-column .whatsapp-link:hover {
+  background: #3d5635;
+}
+
+/* ===========================================
+   Conservación
+   =========================================== */
+
+.conservacion {
+  font-size: 0.85rem;
+  color: #777;
+  font-style: italic;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+/* ===========================================
+   Recomendación editorial
+   =========================================== */
+
+.recomendacion {
+  font-size: 0.9rem;
+  color: #4a6741;
+  font-weight: 600;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  background: #f0f5eb;
+  border-left: 3px solid #4a6741;
+  border-radius: 0 4px 4px 0;
+  line-height: 1.5;
+}
+
+/* ===========================================
+   Observaciones
+   =========================================== */
+
+.info-column .observaciones {
+  font-size: 0.8rem;
+  color: #999;
+  font-style: italic;
+  margin-bottom: 4px;
+}
+
+/* ===========================================
+   Hidden class para filtros
+   =========================================== */
+
+.hidden {
+  display: none !important;
+}
+
+/* ===========================================
+   Mensaje vacío
+   =========================================== */
+
+.empty-message {
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+  font-size: 1rem;
+}
+
+/* ===========================================
+   Responsive: <768px — stacked single column
+   =========================================== */
+
+@media (max-width: 767px) {
+  .section-content {
+    flex-direction: column !important;
+    gap: 24px;
+  }
+
+  .photo-column {
+    flex: none;
+  }
+
+  .info-column {
+    flex: none;
+  }
+
+  .product-section {
+    padding: 40px 0;
+  }
+
+  .catalog-intro p {
+    font-size: 0.92rem;
+  }
+
+  .info-column h2 {
+    font-size: 1.3rem;
+  }
+
+  #app {
+    padding: 16px;
+  }
+
+  .filter-bar {
+    gap: 2px;
+    padding: 12px 0 24px;
+  }
+
+  .filter-bar button {
+    padding: 6px 12px;
+    font-size: 0.82rem;
+  }
+}
+
+/* ===========================================
+   Viewports muy angostos (≤ 320px)
+   =========================================== */
+
+@media (max-width: 320px) {
+  #app {
+    padding: 12px;
+  }
+
+  .filter-bar button {
+    font-size: 0.78rem;
+    padding: 6px 10px;
+  }
+
+  .info-column h2 {
+    font-size: 1.1rem;
+  }
+
+}
