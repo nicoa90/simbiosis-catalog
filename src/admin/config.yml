@@ -1,0 +1,96 @@
+backend:
+  name: git-gateway
+  branch: master
+
+locale: "es"
+media_folder: "img"
+public_folder: "img"
+
+collections:
+  - name: "catalogo"
+    label: "Catálogo de Productos"
+    files:
+      - name: "productos"
+        label: "Productos"
+        file: "src/productos.yaml"
+        fields:
+          - label: "Productos"
+            name: "productos"
+            widget: "list"
+            allow_add: true
+            collapsed: false
+            summary: "{{nombre}} · {{categoria}}"
+            fields:
+              - label: "Nombre"
+                name: "nombre"
+                widget: "string"
+                pattern: ['.{2,100}', "El nombre debe tener entre 2 y 100 caracteres"]
+
+              - label: "Categoría"
+                name: "categoria"
+                widget: "select"
+                options:
+                  - { label: "Tortas", value: "Tortas" }
+                  - { label: "Tartas", value: "Tartas" }
+                  - { label: "Boxes", value: "Boxes" }
+                  - { label: "Alfajores", value: "Alfajores" }
+
+              - label: "Descripción"
+                name: "descripcion"
+                widget: "text"
+                required: false
+                rows: 4
+                hint: "Descripción del producto que aparece en el catálogo"
+
+              - label: "Presentaciones"
+                name: "presentaciones"
+                widget: "list"
+                collapsed: false
+                summary: "{{tamaño}} — {{medida}} · {{precio}}"
+                fields:
+                  - label: "Tamaño"
+                    name: "tamaño"
+                    widget: "string"
+                    hint: "Ej: Grande, Mediano, Único, Cuadrado"
+
+                  - label: "Medida"
+                    name: "medida"
+                    widget: "string"
+                    hint: "Ej: 20 cm, 16 mini piezas"
+
+                  - label: "Rinde"
+                    name: "rinde"
+                    widget: "string"
+                    hint: "Ej: 16/20 porciones, 5-8 personas"
+
+                  - label: "Precio"
+                    name: "precio"
+                    widget: "string"
+                    hint: "Ej: $99.000"
+                    pattern: ['\$[0-9.]+', "El precio debe empezar con $ y usar puntos como separador de miles"]
+
+              - label: "Recomendación"
+                name: "recomendacion"
+                widget: "text"
+                required: false
+                rows: 2
+                hint: "Consejo de conservación o consumo (aparece con borde verde)"
+
+              - label: "Conservación"
+                name: "conservacion"
+                widget: "text"
+                required: false
+                rows: 2
+                hint: "Instrucciones de heladera/freezer"
+
+              - label: "Observaciones"
+                name: "observaciones"
+                widget: "string"
+                required: false
+                hint: "Avisos SIN TACC, notas adicionales, etc."
+
+              - label: "Carpeta de imágenes"
+                name: "carpeta_imagenes"
+                widget: "string"
+                hint: "Nombre de la carpeta en src/img/ — usar guiones minúsculas, sin espacios ni tildes. Ej: torta-telma"
+                pattern: ['[a-z0-9\-]+', "Solo minúsculas, números y guiones. Ej: torta-telma"]
