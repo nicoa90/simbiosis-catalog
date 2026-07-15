@@ -3,7 +3,7 @@ backend:
   branch: master
 
 locale: "es"
-media_folder: "img"
+media_folder: "src/img"
 public_folder: "img"
 
 collections:
