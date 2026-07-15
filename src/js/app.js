@@ -469,14 +469,15 @@ async function loadImages(folder) {
 /**
  * Prueba cada extensión en orden para una imagen y devuelve la
  * primera URL que carga exitosamente, o cadena vacía si ninguna.
- * @param {string} folder - Carpeta del producto
- * @param {string} base - Nombre base (01, 02, 03)
+ * Formato: img/{folder}-{base}{ext} (ej: img/torta-telma-01.jpeg)
+ * @param {string} folder - Prefijo del producto (carpeta_imagenes)
+ * @param {string} base - Número de imagen (01, 02, 03)
  * @param {string[]} exts - Extensiones a probar [.jpg, .jpeg]
  * @returns {Promise<string>} URL resuelta o cadena vacía
  */
 async function resolveImage(folder, base, exts) {
   for (var i = 0; i < exts.length; i++) {
-    var url = 'img/' + folder + '/' + base + exts[i];
+    var url = 'img/' + folder + '-' + base + exts[i];
     var ok = await imageIsLoadable(url);
     if (ok) return url;
   }

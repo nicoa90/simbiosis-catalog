@@ -89,8 +89,8 @@ collections:
                 required: false
                 hint: "Avisos SIN TACC, notas adicionales, etc."
 
-              - label: "Carpeta de imágenes"
+              - label: "Prefijo de imágenes"
                 name: "carpeta_imagenes"
                 widget: "string"
-                hint: "Nombre de la carpeta en src/img/ — usar guiones minúsculas, sin espacios ni tildes. Ej: torta-telma"
+                hint: "Nombre base de las imágenes en src/img/. Las fotos deben llamarse {valor}-01.jpeg, {valor}-02.jpeg, {valor}-03.jpeg. Ej: torta-telma"
                 pattern: ['[a-z0-9\-]+', "Solo minúsculas, números y guiones. Ej: torta-telma"]

@@ -13,25 +13,28 @@ and renders it as a browsable, category-filtered page.
 
 - Pure HTML + CSS + JavaScript (no frameworks, no build tools)
 - js-yaml loaded from CDN for YAML parsing
-- Deploy to Netlify via drag-and-drop
+- Decap CMS admin panel for non-technical editing
+- Deploy to Netlify via Git (auto-deploy on push)
 
 ## Key Conventions
 
 ### File structure
 ```
 simbiosis-catalog/
-├── src/                    ← deployable source (drag this to Netlify)
+├── src/                    ← deployable source (published by Netlify)
 │   ├── index.html
 │   ├── css/style.css
 │   ├── js/app.js
-│   ├── productos.yaml     ← product data (editable by non-technical user)
+│   ├── productos.yaml     ← product data (editable via admin panel)
+│   ├── admin/
+│   │   ├── index.html     ← Decap CMS admin entry point
+│   │   └── config.yml     ← CMS field configuration
 │   └── img/
-│       └── {carpeta_imagenes}/ ← images named 01.jpg, 02.jpg...
-├── openspec/               ← OpenSpec specs and changes
-├── .opencode/              ← OpenCode skills and commands
-├── AGENTS.md
-├── INSTRUCTIONS.md
-└── ROADMAP.md
+│       └── {prefijo}-01.jpeg, {prefijo}-02.jpeg, {prefijo}-03.jpeg
+├── netlify.toml           ← Netlify build configuration
+├── openspec/              ← OpenSpec specs and changes
+├── Instructions.md
+└── README.md
 ```
 
 ### Product YAML structure
@@ -53,10 +56,10 @@ productos:
 ```
 
 ### Image loading
-- Images are stored in `img/{carpeta_imagenes}/` with three fixed names:
-  `01.jpg`/`01.jpeg`, `02.jpg`/`02.jpeg`, `03.jpg`/`03.jpeg`.
+- Images are stored flat in `img/` with naming: `{carpeta_imagenes}-01.jpeg`, `{carpeta_imagenes}-02.jpeg`, `{carpeta_imagenes}-03.jpeg`.
 - `.jpg` is tried first; if not found, `.jpeg` is attempted.
 - If neither exists, a "Sin imagen" placeholder is shown.
+- Images are uploaded via the Decap CMS admin panel media library.
 
 ### Styling — brand identity
 - Brand green: `#4a6741` (titles, active filters, accents, WhatsApp button).
@@ -92,26 +95,17 @@ productos:
 - Comments in code and YAML can be in Spanish.
 
 ### Deployment
-- Deploy by dragging the `src/` folder to **Netlify** (drag-and-drop).
-- The catalog runs as an independent static site on Netlify.
-- It is embedded on `simbiosiscocina.com/catalogo` via a **Tiendup custom page**
-  with an `<iframe>` pointing to the Netlify URL.
-- The catalog page JS uses `postMessage()` + `ResizeObserver` to send its
-  height to the parent frame on load and on resize, so the iframe auto-sizes.
-- Tiendup embed snippet (pasted in "Código HTML" section — **must be clean JS,
-  Tiendup's editor can inject garbled text that breaks the script**):
-  ```html
-  <iframe src="https://catalogo-simbiosis.netlify.app"
-          style="width:100%; border:none;"
-          id="catalog-iframe"></iframe>
-  <script>
-  window.addEventListener('message', function(e) {
-    if (e.data && e.data.iframeHeight) {
-      document.getElementById('catalog-iframe').style.height = e.data.iframeHeight + 'px';
-    }
-  });
-  </script>
-  ```
+- Deploy automatically via Git push to `master` branch on GitHub.
+- Netlify auto-deploys on every push (configured in `netlify.toml`).
+- Admin panel at `catalogo-simbiosis.netlify.app/admin/` for non-technical editing.
+- Netlify Identity enabled for admin authentication.
+
+### Admin Panel (Decap CMS)
+- Access at `/admin/` — login with Netlify Identity credentials.
+- Products are edited via visual form fields (no YAML editing required).
+- Images uploaded through the media library are saved to `src/img/`.
+- Image naming convention: `{carpeta_imagenes}-01.jpeg`, `-02.jpeg`, `-03.jpeg`.
+- Each "Publish" in the admin creates a Git commit and triggers auto-deploy.
 
 ### Scroll behavior
 - No category nav inside the iframe.
