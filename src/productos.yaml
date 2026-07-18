@@ -26,132 +26,151 @@ intro: >
   para tu pedido, estaré encantada de ayudarte.
 
 productos:
-  # ============================================================
-  # TORTAS
-  # ============================================================
+productos:
+  - nombre: Torta Telma
+    categoria: Tortas
+    descripcion: >
+      Bizcocho de cacao, realizado con base de harina de almendras, cacao
+      amargo,
 
-  - nombre: "Torta Telma"
-    categoria: "Tortas"
-    descripcion: |
-      Bizcocho de cacao, realizado con base de harina de almendras, cacao amargo,
       endulzado con fruta de estación en compota (pera, manzana) y dátiles.
+
       En su interior: cremoso de cacao perfumado con naranja, segundo piso con
+
       caramelo de dátiles y trocitos de nueces. Por fuera, cremoso de cacao amargo.
     presentaciones:
-      - tamaño: "Grande"
-        medida: "20 cm"
-        rinde: "16/20 porciones"
-        precio: "$99.000"
-      - tamaño: "Mediano"
-        medida: "16 cm"
-        rinde: "12/16 porciones"
-        precio: "$79.000"
+      - tamaño: Grande
+        medida: 20 cm
+        rinde: 16/20 porciones (aprox)
+        precio: $99.000
+      - tamaño: Mediano
+        medida: 16 cm
+        rinde: 12/16 porciones
+        precio: $79.000
     recomendacion: >
-      Conservar en caja o recipiente hermético, al resguardo del aire,
-      para mantener su humedad. Retirar de heladera 10/15 minutos antes de su consumo.
+      Conservar en caja o recipiente hermético, al resguardo del aire, para
+      mantener su humedad. Retirar de heladera 10/15 minutos antes de su
+      consumo.
     conservacion: |
       3/4 días en heladera.
       Hasta 6 meses en freezer.
-    observaciones: "SIN TACC (no apto celíacos). Consultar por diferentes sabores, rellenos y pisos."
-    carpeta_imagenes: "torta-telma"
-
-  - nombre: "Torta Amanda"
-    categoria: "Tortas"
-    descripcion: |
+    observaciones: SIN TACC (no apto celíacos). Consultar por diferentes sabores,
+      rellenos y pisos.
+    carpeta_imagenes: torta-telma
+  - nombre: Torta Amanda
+    categoria: Tortas
+    descripcion: >
       Bizcocho de vainilla, realizado con base de harina de almendras y coco,
+
       endulzado con fruta de estación en compota (pera, manzana) y dátiles.
+
       En su interior: cremoso de castañas de cajú perfumado con limón, frutos rojos,
+
       picos de mermelada casera. Cubierta con cremoso de vainilla perfumado con limón.
     presentaciones:
-      - tamaño: "Grande"
-        medida: "20 cm"
-        rinde: "16/20 porciones"
-        precio: "$99.000"
-      - tamaño: "Mediano"
-        medida: "16 cm"
-        rinde: "12/16 porciones"
-        precio: "$79.000"
+      - tamaño: Grande
+        medida: 20 cm
+        rinde: 16/20 porciones
+        precio: $99.000
+      - tamaño: Mediano
+        medida: 16 cm
+        rinde: 12/16 porciones
+        precio: $79.000
     recomendacion: >
-      Conservar en caja o recipiente hermético, al resguardo del aire,
-      para mantener su humedad. Retirar de heladera 10/15 minutos antes de su consumo.
+      Conservar en caja o recipiente hermético, al resguardo del aire, para
+      mantener su humedad. Retirar de heladera 10/15 minutos antes de su
+      consumo.
     conservacion: |
       3/4 días en heladera.
       Hasta 6 meses en freezer.
-    observaciones: "SIN TACC (no apto celíacos). Consultar por diferentes sabores, rellenos y pisos."
-    carpeta_imagenes: "torta-amanda"
-
-  - nombre: "Carrot cake"
-    categoria: "Tortas"
-    descripcion: |
+    observaciones: SIN TACC (no apto celíacos). Consultar por diferentes sabores,
+      rellenos y pisos.
+    carpeta_imagenes: torta-amanda
+  - nombre: Carrot cake
+    categoria: Tortas
+    descripcion: >
       Bizcocho con base de almendras, nuez y zanahoria, especiado con canela,
+
       naranja y jengibre. Cremoso a base de castañas de cajú, perfumado con naranja.
+
       Acompañado y decorado con nueces tostadas.
     presentaciones:
-      - tamaño: "Grande"
-        medida: "20 cm"
-        rinde: "16/20 porciones"
-        precio: "$85.000"
-      - tamaño: "Mediano"
-        medida: "16 cm"
-        rinde: "12/16 porciones"
-        precio: "$65.000"
+      - tamaño: Grande
+        medida: 20 cm
+        rinde: 16/20 porciones
+        precio: $85.000
+      - tamaño: Mediano
+        medida: 16 cm
+        rinde: 12/16 porciones
+        precio: $65.000
     recomendacion: >
-      Conservar en caja o recipiente hermético, al resguardo del aire,
-      para mantener su humedad. Retirar de heladera 10/15 minutos antes de su consumo.
+      Conservar en caja o recipiente hermético, al resguardo del aire, para
+      mantener su humedad. Retirar de heladera 10/15 minutos antes de su
+      consumo.
     conservacion: |
       3/4 días en heladera.
       Hasta 6 meses en freezer.
-    observaciones: "SIN TACC (no apto celíacos). Consultar por diferentes sabores, rellenos y pisos."
-    carpeta_imagenes: "carrot-cake"
+    observaciones: SIN TACC (no apto celíacos). Consultar por diferentes sabores,
+      rellenos y pisos.
+    carpeta_imagenes: carrot-cake
+  - nombre: Torta Ana
+    categoria: Tortas
+    descripcion: >
+      Bizcocho de vainilla, realizado con base de harina de almendras, endulzado
+      con
 
-  - nombre: "Torta Ana"
-    categoria: "Tortas"
-    descripcion: |
-      Bizcocho de vainilla, realizado con base de harina de almendras, endulzado con
       fruta de estación en compota natural (pera, manzana) y dátiles. En su interior y
+
       decoración exterior: mermelada casera de arándanos y cremoso de castañas, hibiscus,
+
       polvo de rosas y perfumado con limón.
     presentaciones:
-      - tamaño: "Dos pisos"
-        medida: "20 + 16 cm"
-        rinde: "28/36 porciones"
-        precio: "$210.000"
-      - tamaño: "Grande"
-        medida: "20 cm"
-        rinde: "16/20 porciones"
-        precio: "$102.000"
-      - tamaño: "Mediana"
-        medida: "16 cm"
-        rinde: "12/16 porciones"
-        precio: "$80.000"
+      - tamaño: Dos pisos
+        medida: 20 + 16 cm
+        rinde: 28/36 porciones
+        precio: $210.000
+      - tamaño: Grande
+        medida: 20 cm
+        rinde: 16/20 porciones
+        precio: $102.000
+      - tamaño: Mediana
+        medida: 16 cm
+        rinde: 12/16 porciones
+        precio: $80.000
     recomendacion: >
-      Conservar en caja o recipiente hermético, al resguardo del aire,
-      para mantener su humedad. Retirar de heladera 10/15 minutos antes de su consumo.
+      Conservar en caja o recipiente hermético, al resguardo del aire, para
+      mantener su humedad. Retirar de heladera 10/15 minutos antes de su
+      consumo.
     conservacion: |
       3/4 días en heladera.
       Hasta 6 meses en freezer.
-    observaciones: "SIN TACC (no apto celíacos). La versión de dos pisos incluye un piso de 20 cm y uno de 16 cm."
-    carpeta_imagenes: "torta-ana"
+    observaciones: SIN TACC (no apto celíacos). La versión de dos pisos incluye un
+      piso de 20 cm y uno de 16 cm.
+    carpeta_imagenes: torta-ana
+  - nombre: Torta Chocolate y frutos rojos
+    categoria: Tortas
+    descripcion: >
+      Bizcocho de almendras, semillas y cacao. Su relleno y cubierta es a base
+      de una
 
-  - nombre: "Torta Chocolate y frutos rojos"
-    categoria: "Tortas"
-    descripcion: |
-      Bizcocho de almendras, semillas y cacao. Su relleno y cubierta es a base de una
       crema de cacao, acompañada por frutos rojos en trozos. Ingredientes principales:
+
       almendras, cacao amargo, semillas de lino, harina de coco, fruta natural, dátiles,
+
       aceite de coco, porotos alubia, castañas de cajú.
     presentaciones:
-      - tamaño: "Grande"
-        medida: "20 cm"
-        rinde: "16/20 porciones"
-        precio: "$90.000"
-      - tamaño: "Mediano"
-        medida: "16 cm"
-        rinde: "12/16 porciones"
-        precio: "$78.000"
+      - tamaño: Grande
+        medida: 20 cm
+        rinde: 16/20 porciones
+        precio: $90.000
+      - tamaño: Mediano
+        medida: 16 cm
+        rinde: 12/16 porciones
+        precio: $78.000
     recomendacion: >
-      Conservar en caja o recipiente hermético, al resguardo del aire,
-      para mantener su humedad. Retirar de heladera 10/15 minutos antes de su consumo.
+      Conservar en caja o recipiente hermético, al resguardo del aire, para
+      mantener su humedad. Retirar de heladera 10/15 minutos antes de su
+      consumo.
     conservacion: |
       3/4 días en heladera.
       Hasta 6 meses en freezer.
@@ -183,139 +202,145 @@ productos:
       Hasta 6 meses en freezer.
     observaciones: "SIN TACC (no apto celíacos). Consultar por diferentes sabores, rellenos y pisos."
     carpeta_imagenes: "torta-clara"
-
-  # ============================================================
-  # TARTAS
-  # ============================================================
-
   - nombre: "Tarta de coco, caramelo y frutos rojos"
     categoria: "Tartas"
-    descripcion: |
-      Base de coco y almendras, acompañado por un caramelo de dátiles, una crema suave
+    descripcion: >
+      Base de coco y almendras, acompañado por un caramelo de dátiles, una crema
+      suave
+
       de vainilla perfumada con limón, finalizada con frutos rojos congelados.
     presentaciones:
-      - tamaño: "Grande"
-        medida: "22 cm"
-        rinde: "8/16 porciones"
-        precio: "$80.000"
-      - tamaño: "Mediano"
-        medida: "18 cm"
-        rinde: "8/12 porciones"
-        precio: "$65.000"
+      - tamaño: Grande
+        medida: 22 cm
+        rinde: 8/16 porciones
+        precio: $80.000
+      - tamaño: Mediano
+        medida: 18 cm
+        rinde: 8/12 porciones
+        precio: $65.000
     conservacion: |
       3/4 días en heladera.
       Hasta 6 meses en freezer.
-    observaciones: "SIN TACC (no apto celíacos)."
-    carpeta_imagenes: "tarta-coco-caramelo-frutos-rojos"
+    observaciones: SIN TACC (no apto celíacos).
+    carpeta_imagenes: tarta-coco-caramelo-frutos-rojos
+  - nombre: Tarta de avellanas y cacao
+    categoria: Tartas
+    descripcion: >
+      Base de almendra, cacao amargo, semillas de chía, semillas de sésamo, coco
+      rallado
 
-  - nombre: "Tarta de avellanas y cacao"
-    categoria: "Tartas"
-    descripcion: |
-      Base de almendra, cacao amargo, semillas de chía, semillas de sésamo, coco rallado
       y dátiles. Su primer relleno: cremoso de castañas y avellanas tostadas. Para
+
       finalizar, cremoso de cacao amargo. Ingredientes principales: semillas, frutos secos,
+
       porotos alubia, aceite de coco, avellanas, castañas de cajú, cacao amargo.
     presentaciones:
-      - tamaño: "Cuadrado"
-        medida: "20×20 cm"
-        rinde: "25 piezas individuales (4×4 cm)"
-        precio: "$120.000"
-      - tamaño: "Grande"
-        medida: "22 cm"
-        rinde: "8/16 porciones"
-        precio: "$95.000"
-      - tamaño: "Mediano"
-        medida: "18 cm"
-        rinde: "8/12 porciones"
-        precio: "$79.000"
+      - tamaño: Cuadrado
+        medida: 20×20 cm
+        rinde: 25 piezas individuales (4×4 cm)
+        precio: $120.000
+      - tamaño: Grande
+        medida: 22 cm
+        rinde: 8/16 porciones
+        precio: $95.000
+      - tamaño: Mediano
+        medida: 18 cm
+        rinde: 8/12 porciones
+        precio: $79.000
     conservacion: |
       3/4 días en heladera.
       Hasta 6 meses en freezer.
-    observaciones: "SIN TACC (no apto celíacos)."
-    carpeta_imagenes: "tarta-avellanas-cacao"
+    observaciones: SIN TACC (no apto celíacos).
+    carpeta_imagenes: tarta-avellanas-cacao
+  - nombre: Tarta Caramel
+    categoria: Tartas
+    descripcion: >
+      Base de cacao, dátiles, coco, nueces, almendras, castañas. En su primer
+      relleno
 
-  - nombre: "Tarta Caramel"
-    categoria: "Tartas"
-    descripcion: |
-      Base de cacao, dátiles, coco, nueces, almendras, castañas. En su primer relleno
       encontrarán un cremoso acaramelado de castañas de cajú, endulzado con dátiles y
+
       perfumado con piel de naranja y extracto natural de vainilla. En sus bordes,
+
       decoración con cremoso de chocolate y trufas de cacao.
     presentaciones:
-      - tamaño: "Cuadrado"
-        medida: "20×20 cm"
-        rinde: "25 piezas individuales (4×4 cm)"
-        precio: "$120.000"
-      - tamaño: "Grande"
-        medida: "22 cm"
-        rinde: "8/16 porciones"
-        precio: "$95.000"
-      - tamaño: "Mediano"
-        medida: "18 cm"
-        rinde: "8/12 porciones"
-        precio: "$79.000"
+      - tamaño: Cuadrado
+        medida: 20×20 cm
+        rinde: 25 piezas individuales (4×4 cm)
+        precio: $120.000
+      - tamaño: Grande
+        medida: 22 cm
+        rinde: 8/16 porciones
+        precio: $95.000
+      - tamaño: Mediano
+        medida: 18 cm
+        rinde: 8/12 porciones
+        precio: $79.000
     conservacion: |
       3/4 días en heladera.
       Hasta 6 meses en freezer.
-    observaciones: "SIN TACC (no apto celíacos)."
-    carpeta_imagenes: "tarta-caramel"
+    observaciones: SIN TACC (no apto celíacos).
+    carpeta_imagenes: tarta-caramel
+  - nombre: Cheesecake caramelo
+    categoria: Tartas
+    descripcion: >
+      Base crujiente de frutos secos, semillas, dátiles y harina de arroz.
+      Cremoso de
 
-  - nombre: "Cheesecake caramelo"
-    categoria: "Tartas"
-    descripcion: |
-      Base crujiente de frutos secos, semillas, dátiles y harina de arroz. Cremoso de
       castañas, levemente endulzado y perfumado con extracto natural de vainilla. En su
+
       cubierta, salsa ligera de caramelo de dátiles, acompañando los bordes con crema de
+
       cacao y roquitas crujientes de la misma base. Está tarta, sin dudas, es para los
+
       fanáticos de lo dulce.
     presentaciones:
-      - tamaño: "Grande"
-        medida: "22 cm"
-        rinde: "16 porciones"
-        precio: "$85.000"
-      - tamaño: "Mediano"
-        medida: "18 cm"
-        rinde: "12 porciones"
-        precio: "$72.000"
-    recomendacion: "Consumir muy frío."
+      - tamaño: Grande
+        medida: 22 cm
+        rinde: 16 porciones
+        precio: $85.000
+      - tamaño: Mediano
+        medida: 18 cm
+        rinde: 12 porciones
+        precio: $72.000
+    recomendacion: Consumir muy frío.
     conservacion: |
       3/4 días en heladera.
       Hasta 6 meses en freezer.
-    observaciones: "SIN TACC (no apto celíacos). La razón principal es que podría existir contaminación cruzada por el uso de herramientas compartidas en preparaciones del pasado."
-    carpeta_imagenes: "cheesecake-caramelo"
+    observaciones: SIN TACC (no apto celíacos). La razón principal es que podría
+      existir contaminación cruzada por el uso de herramientas compartidas en
+      preparaciones del pasado.
+    carpeta_imagenes: cheesecake-caramelo
+  - nombre: Cheesecake frutos rojos
+    categoria: Tartas
+    descripcion: >
+      Base de coco, semillas, dátiles, maní y harina de arroz. Cremoso de
+      castañas,
 
-  - nombre: "Cheesecake frutos rojos"
-    categoria: "Tartas"
-    descripcion: |
-      Base de coco, semillas, dátiles, maní y harina de arroz. Cremoso de castañas,
       levemente endulzado y perfumado con extracto natural de vainilla. En su cubierta,
+
       mermelada casera de frutos rojos.
     presentaciones:
-      - tamaño: "Cuadrado"
-        medida: "20×20 cm"
-        rinde: "25 piezas individuales (4×4 cm)"
-        precio: "$105.000"
-      - tamaño: "Grande"
-        medida: "22 cm"
-        rinde: "16 porciones"
-        precio: "$85.000"
-      - tamaño: "Mediano"
-        medida: "18 cm"
-        rinde: "12 porciones"
-        precio: "$72.000"
-    recomendacion: "Consumir muy frío."
+      - tamaño: Cuadrado
+        medida: 20×20 cm
+        rinde: 25 piezas individuales (4×4 cm)
+        precio: $105.000
+      - tamaño: Grande
+        medida: 22 cm
+        rinde: 16 porciones
+        precio: $85.000
+      - tamaño: Mediano
+        medida: 18 cm
+        rinde: 12 porciones
+        precio: $72.000
+    recomendacion: Consumir muy frío.
     conservacion: |
       3/4 días en heladera.
       Hasta 6 meses en freezer.
-    observaciones: "SIN TACC (no apto celíacos)."
-    carpeta_imagenes: "cheesecake-frutos-rojos"
-
-  # ============================================================
-  # BOXES
-  # ============================================================
-
-  - nombre: "Box degustación"
-    categoria: "Boxes"
+    observaciones: SIN TACC (no apto celíacos).
+    carpeta_imagenes: cheesecake-frutos-rojos
+  - nombre: Box degustación
+    categoria: Boxes
     descripcion: |
       Tabla de 16 mini piezas individuales que incluye:
       4 lingotes de cacao, nuez y naranja.
@@ -325,18 +350,17 @@ productos:
       La propuesta no es modificable. Se calcula entre 2/3 piezas por persona.
       Ideal para presentar la versión saludable de cualquier mesa dulce.
     presentaciones:
-      - tamaño: "Único"
-        medida: "16 mini piezas"
-        rinde: "5-8 personas"
-        precio: "$65.000"
+      - tamaño: Único
+        medida: 16 mini piezas
+        rinde: 5-8 personas
+        precio: $65.000
     conservacion: |
       3/4 días en heladera.
       Hasta 6 meses en freezer.
-    observaciones: "SIN TACC (no apto celíacos). Propuesta fija no modificable."
-    carpeta_imagenes: "box-degustacion"
-
-  - nombre: "Box degustación small"
-    categoria: "Boxes"
+    observaciones: SIN TACC (no apto celíacos). Propuesta fija no modificable.
+    carpeta_imagenes: box-degustacion
+  - nombre: Box degustación small
+    categoria: Boxes
     descripcion: |
       Tabla de 8 mini piezas individuales que incluye:
       2 lingotes de cacao, nuez y naranja.
@@ -345,30 +369,35 @@ productos:
       2 alfajores de dátiles y maní.
       Ideal para presentar la versión saludable de cualquier mesa dulce.
     presentaciones:
-      - tamaño: "Único"
-        medida: "8 mini piezas"
-        rinde: "2-4 personas"
-        precio: "$35.000"
+      - tamaño: Único
+        medida: 8 mini piezas
+        rinde: 2-4 personas
+        precio: $35.000
     conservacion: |
       3/4 días en heladera.
       Hasta 6 meses en freezer.
-    observaciones: "SIN TACC (no apto celíacos)."
-    carpeta_imagenes: "box-degustacion-small"
+    observaciones: SIN TACC (no apto celíacos).
+    carpeta_imagenes: box-degustacion-small
+  - nombre: Trío de lingotes
+    categoria: Boxes
+    descripcion: >
+      Trío de lingotes, cada uno de 3 cm de ancho × 15 cm de largo. La caja
+      incluye:
 
-  - nombre: "Trío de lingotes"
-    categoria: "Boxes"
-    descripcion: |
-      Trío de lingotes, cada uno de 3 cm de ancho × 15 cm de largo. La caja incluye:
       1 barra de avellanas y cacao.
+
       1 barra de cheesecake de frutos rojos.
+
       1 barra de cacao, nuez y naranja.
+
       Todas las bases de las piezas son RAW, elaboradas a partir de frutos secos,
+
       semillas, coco, cacao, endulzadas con dátiles y fruta.
     presentaciones:
-      - tamaño: "Único"
-        medida: "3 lingotes (3×15 cm c/u)"
-        rinde: "3 barras"
-        precio: "$30.000"
+      - tamaño: Único
+        medida: 3 lingotes (3×15 cm c/u)
+        rinde: 3 barras
+        precio: $30.000
     conservacion: |
       3/4 días en heladera.
       Hasta 6 meses en freezer.
@@ -403,53 +432,55 @@ productos:
       Crackers saladas de semillas.
       3 trufas de frutos secos, coco y dátiles (pueden ser de vainilla o cacao).
     presentaciones:
-      - tamaño: "Único"
-        medida: "Box"
-        rinde: "1 persona"
-        precio: "$58.000"
+      - tamaño: Único
+        medida: Box
+        rinde: 1 persona
+        precio: $58.000
     conservacion: |
       3/4 días en heladera.
       Hasta 6 meses en freezer.
-    observaciones: "SIN TACC (no apto celíacos)."
-    carpeta_imagenes: "box-desayuno"
+    observaciones: SIN TACC (no apto celíacos).
+    carpeta_imagenes: box-desayuno
+  - nombre: Alfajores de dátiles
+    categoria: Alfajores
+    descripcion: >
+      La base de estos alfajores es el coco, maní sin sal y dátiles. Rellenos:
+      cremoso de
 
-  # ============================================================
-  # ALFAJORES
-  # ============================================================
-
-  - nombre: "Alfajores de dátiles"
-    categoria: "Alfajores"
-    descripcion: |
-      La base de estos alfajores es el coco, maní sin sal y dátiles. Rellenos: cremoso de
       chocolate y corazón de arándanos, chocolate o dátiles y corazón de maní (consultar
+
       opciones). Ingredientes principales: coco rallado, maní sin sal, dátiles, castañas
+
       de cajú, arándanos deshidratados, aceite de coco, porotos alubia, cacao amargo,
+
       extracto natural de vainilla.
     presentaciones:
-      - tamaño: "Caja"
-        medida: "6 unidades (4 cm diámetro c/u)"
-        rinde: "6 alfajores"
-        precio: "$30.000"
-    recomendacion: "Consumir con frío, directo de heladera."
+      - tamaño: Caja
+        medida: 6 unidades (4 cm diámetro c/u)
+        rinde: 6 alfajores
+        precio: $30.000
+    recomendacion: Consumir con frío, directo de heladera.
     conservacion: |
       3/4 días en heladera.
       Hasta 6 meses en freezer.
-    observaciones: "SIN TACC (no apto celíacos)."
-    carpeta_imagenes: "alfajores-datiles"
+    observaciones: SIN TACC (no apto celíacos).
+    carpeta_imagenes: alfajores-datiles
+  - nombre: Alfajores de almendras
+    categoria: Alfajores
+    descripcion: >
+      Tapa de almendras, cremoso de cacao amargo y corazón de mermelada de
+      frutos rojos.
 
-  - nombre: "Alfajores de almendras"
-    categoria: "Alfajores"
-    descripcion: |
-      Tapa de almendras, cremoso de cacao amargo y corazón de mermelada de frutos rojos.
       Ingredientes utilizados: harina de almendras, porotos alubia, cacao amargo, aceite
+
       de coco, frutos rojos.
     presentaciones:
-      - tamaño: "Caja"
-        medida: "6 unidades (6 cm diámetro c/u)"
-        rinde: "6 alfajores"
-        precio: "$26.000"
+      - tamaño: Caja
+        medida: 6 unidades (6 cm diámetro c/u)
+        rinde: 6 alfajores
+        precio: $26.000
     conservacion: |
       3/4 días en heladera.
       Hasta 6 meses en freezer.
-    observaciones: "SIN TACC (no apto celíacos)."
-    carpeta_imagenes: "alfajores-almendras"
+    observaciones: SIN TACC (no apto celíacos).
+    carpeta_imagenes: alfajores-almendras
