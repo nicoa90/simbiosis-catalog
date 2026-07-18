@@ -63,11 +63,20 @@ async function initCatalog() {
     header.className = 'catalog-header';
     app.appendChild(header);
 
-    // Intro del catálogo
-    const intro = document.createElement('div');
-    intro.className = 'catalog-intro';
-    intro.innerHTML = '<p>Simbiosis nace de una búsqueda personal: la de encontrar una forma más consciente de alimentarme sin renunciar al placer de disfrutar de la pastelería. De esa unión entre el amor por los sabores, la estética y el bienestar surge una propuesta diferente, pensada para quienes buscan o necesitan alternativas más saludables.</p><p>Tras un largo proceso de investigación, desarrollo y perfeccionamiento de recetas de autor, junto con una cuidadosa selección de materias primas de calidad y una elaboración artesanal en cada detalle, nace una pastelería noble, auténtica y fresca. Una propuesta que invita a disfrutar de sabores deliciosos de una manera consciente, equilibrada y natural.</p><p>Cada producto está creado con el propósito de ofrecer una alternativa deliciosa que acompañe un estilo de vida más consciente. Creemos que es posible hacer elecciones alimentarias más saludables sin resignar sabor ni disfrute. Por eso elaboramos productos plant-based, sin conservantes y con ingredientes de temporada, apostando a una forma de consumo que cuida tanto a las personas como al entorno.</p><p>Te invito a recorrer este catálogo y descubrir cada una de nuestras propuestas. Si tenés alguna consulta, necesitás información adicional o buscás una recomendación para tu pedido, estaré encantada de ayudarte.</p>';
-    app.appendChild(intro);
+    // Intro del catálogo (desde YAML, separado por párrafos vacíos)
+    if (data.intro && data.intro.trim() !== '') {
+      const intro = document.createElement('div');
+      intro.className = 'catalog-intro';
+      data.intro.split(/\n\n+/).forEach(function (p) {
+        const trimmed = p.trim();
+        if (trimmed) {
+          const para = document.createElement('p');
+          para.textContent = trimmed;
+          intro.appendChild(para);
+        }
+      });
+      app.appendChild(intro);
+    }
 
     // Filtros
     const categories = deriveCategories(gProducts);

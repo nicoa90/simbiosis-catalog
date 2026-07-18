@@ -14,6 +14,12 @@ collections:
         label: "Productos"
         file: "src/productos.yaml"
         fields:
+          - label: "Texto de introducción"
+            name: "intro"
+            widget: "text"
+            rows: 8
+            hint: "Texto que aparece arriba del catálogo. Separá párrafos con una línea vacía."
+
           - label: "Productos"
             name: "productos"
             widget: "list"

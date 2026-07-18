@@ -3,6 +3,28 @@
 # Las imágenes deben ir en src/img/{carpeta_imagenes}/ con nombres 01.jpg, 02.jpg y 03.jpg.
 # Solo se admiten archivos .jpg. Los placeholders se indican con archivos .gitkeep.
 
+intro: >
+  Simbiosis nace de una búsqueda personal: la de encontrar una forma más consciente
+  de alimentarme sin renunciar al placer de disfrutar de la pastelería. De esa unión
+  entre el amor por los sabores, la estética y el bienestar surge una propuesta
+  diferente, pensada para quienes buscan o necesitan alternativas más saludables.
+
+  Tras un largo proceso de investigación, desarrollo y perfeccionamiento de recetas
+  de autor, junto con una cuidadosa selección de materias primas de calidad y una
+  elaboración artesanal en cada detalle, nace una pastelería noble, auténtica y
+  fresca. Una propuesta que invita a disfrutar de sabores deliciosos de una manera
+  consciente, equilibrada y natural.
+
+  Cada producto está creado con el propósito de ofrecer una alternativa deliciosa que
+  acompañe un estilo de vida más consciente. Creemos que es posible hacer elecciones
+  alimentarias más saludables sin resignar sabor ni disfrute. Por eso elaboramos
+  productos plant-based, sin conservantes y con ingredientes de temporada, apostando
+  a una forma de consumo que cuida tanto a las personas como al entorno.
+
+  Te invito a recorrer este catálogo y descubrir cada una de nuestras propuestas. Si
+  tenés alguna consulta, necesitás información adicional o buscás una recomendación
+  para tu pedido, estaré encantada de ayudarte.
+
 productos:
   # ============================================================
   # TORTAS
@@ -135,6 +157,32 @@ productos:
       Hasta 6 meses en freezer.
     observaciones: "SIN TACC (no apto celíacos). Consultar por diferentes sabores, rellenos y pisos."
     carpeta_imagenes: "torta-chocolate-frutos-rojos"
+    
+  - nombre: "Torta Clara"
+    categoria: "Tortas"
+    descripcion: |
+      Bizcocho de vainilla, realizado con basé de harina de almendras y coco, endulzado con fruta de estación en compota  (pera, manzana) y dátiles. 
+      Primer relleno: Cremoso de castañas de cajú perfumado con limón, frutillas en trozos. 
+      Cubierta con cremoso de vainilla perfumado con limón. 
+      Segundo relleno: Dulce de coco y datiles. Cubierta: Cremoso suave de caju, perfumado y saborizado con vainilla y ralladura de limón.
+      Podes consultar por diferentes combinaciones de sabores, rellenos y  pisos.
+    presentaciones:
+      - tamaño: "Grande"
+        medida: "20 cm"
+        rinde: "16/20 porciones"
+        precio: "$110.000"
+      - tamaño: "Mediano"
+        medida: "16 cm"
+        rinde: "12/16 porciones"
+        precio: "$85.000"
+    recomendacion: >
+      Conservar en caja o recipiente hermético, al resguardo del aire, para poder mantener su humedad. 
+      Retirar de heladera 10/15 minutos antes de su consumo.
+    conservacion: |
+      3/4 días en heladera.
+      Hasta 6 meses en freezer.
+    observaciones: "SIN TACC (no apto celíacos). Consultar por diferentes sabores, rellenos y pisos."
+    carpeta_imagenes: "torta-clara"
 
   # ============================================================
   # TARTAS
@@ -326,6 +374,23 @@ productos:
       Hasta 6 meses en freezer.
     observaciones: "SIN TACC (no apto celíacos)."
     carpeta_imagenes: "trio-lingotes"
+    
+  - nombre: "LINGOTES INDIVIDUALES XL"
+    categoria: "Boxes"
+    descripcion: |
+      Consultar por diferentes opciones disponibles: 
+      Tarta caramel, cheesecake frutos rojos, cacao, nuez y naranja, cheesecake matcha y frambuesas, tarta cacao y avellanas.
+      Todas las bases de las piezas son RAW, elaboradas a partir de frutos secos, semillas , coco, cacao, endulzadas con dátiles y fruta.
+    presentaciones:
+      - tamaño: "Único"
+        medida: "Lingote de 4X16 cm"
+        rinde: "1 barra"
+        precio: "$18.000"
+    conservacion: |
+      3/4 días en heladera.
+      Hasta 6 meses en freezer.
+    observaciones: "SIN TACC (no apto celíacos)."
+    carpeta_imagenes: "lingotes-xl"
 
   - nombre: "Box desayuno"
     categoria: "Boxes"
