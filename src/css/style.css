@@ -102,6 +102,9 @@ body {
 /* Hueco reservado para la imagen de portada (la elige el editor) */
 .intro-image {
   min-width: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
 }
 
 .intro-image-placeholder {
@@ -124,12 +127,12 @@ body {
 
 /* Imagen de portada real (cuando el editor sube una foto) */
 .intro-image-img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
-  min-height: 200px;
   object-fit: cover;
   display: block;
-  border-radius: 4px;
 }
 
 /* ===========================================
@@ -436,6 +439,11 @@ body {
   .catalog-intro-grid {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .intro-image {
+    /* Fixed height so the absolutely-positioned image fills it on mobile */
+    aspect-ratio: 16 / 9;
   }
 
   .intro-image-placeholder {
