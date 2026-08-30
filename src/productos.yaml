@@ -1,8 +1,3 @@
-# Catálogo de productos — Simbiosis Pastelería Natural
-# Categorías: Tortas, Tartas, Boxes, Alfajores
-# Las imágenes deben ir en src/img/{carpeta_imagenes}/ con nombres 01.jpg, 02.jpg y 03.jpg.
-# Solo se admiten archivos .jpg. Los placeholders se indican con archivos .gitkeep.
-
 intro: |
   Simbiosis nace de una búsqueda personal: alimentarme de forma más consciente
   sin renunciar al placer de la pastelería.
@@ -13,7 +8,7 @@ intro: |
 
   Te invito a recorrer el catálogo y descubrir cada propuesta. Si tenés dudas o
   querés una recomendación, estaré encantada de ayudarte.
-
+intro_imagen: img/whatsapp-image-2026-08-30-at-16.18.05.jpeg
 productos:
   - nombre: Torta Telma
     categoria: Tortas
@@ -162,36 +157,43 @@ productos:
     conservacion: |
       3/4 días en heladera.
       Hasta 6 meses en freezer.
-    observaciones: "SIN TACC (no apto celíacos). Consultar por diferentes sabores, rellenos y pisos."
-    carpeta_imagenes: "torta-chocolate-frutos-rojos"
-    
-  - nombre: "Torta Clara"
-    categoria: "Tortas"
-    descripcion: |
-      Bizcocho de vainilla, realizado con basé de harina de almendras y coco, endulzado con fruta de estación en compota  (pera, manzana) y dátiles. 
+    observaciones: SIN TACC (no apto celíacos). Consultar por diferentes sabores,
+      rellenos y pisos.
+    carpeta_imagenes: torta-chocolate-frutos-rojos
+  - nombre: Torta Clara
+    categoria: Tortas
+    descripcion: >
+      Bizcocho de vainilla, realizado con basé de harina de almendras y coco,
+      endulzado con fruta de estación en compota  (pera, manzana) y dátiles. 
+
       Primer relleno: Cremoso de castañas de cajú perfumado con limón, frutillas en trozos. 
+
       Cubierta con cremoso de vainilla perfumado con limón. 
+
       Segundo relleno: Dulce de coco y datiles. Cubierta: Cremoso suave de caju, perfumado y saborizado con vainilla y ralladura de limón.
+
       Podes consultar por diferentes combinaciones de sabores, rellenos y  pisos.
     presentaciones:
-      - tamaño: "Grande"
-        medida: "20 cm"
-        rinde: "16/20 porciones"
-        precio: "$110.000"
-      - tamaño: "Mediano"
-        medida: "16 cm"
-        rinde: "12/16 porciones"
-        precio: "$85.000"
+      - tamaño: Grande
+        medida: 20 cm
+        rinde: 16/20 porciones
+        precio: $110.000
+      - tamaño: Mediano
+        medida: 16 cm
+        rinde: 12/16 porciones
+        precio: $85.000
     recomendacion: >
-      Conservar en caja o recipiente hermético, al resguardo del aire, para poder mantener su humedad. 
-      Retirar de heladera 10/15 minutos antes de su consumo.
+      Conservar en caja o recipiente hermético, al resguardo del aire, para
+      poder mantener su humedad.  Retirar de heladera 10/15 minutos antes de su
+      consumo.
     conservacion: |
       3/4 días en heladera.
       Hasta 6 meses en freezer.
-    observaciones: "SIN TACC (no apto celíacos). Consultar por diferentes sabores, rellenos y pisos."
-    carpeta_imagenes: "torta-clara"
-  - nombre: "Tarta de coco, caramelo y frutos rojos"
-    categoria: "Tartas"
+    observaciones: SIN TACC (no apto celíacos). Consultar por diferentes sabores,
+      rellenos y pisos.
+    carpeta_imagenes: torta-clara
+  - nombre: Tarta de coco, caramelo y frutos rojos
+    categoria: Tartas
     descripcion: >
       Base de coco y almendras, acompañado por un caramelo de dátiles, una crema
       suave
@@ -389,28 +391,28 @@ productos:
     conservacion: |
       3/4 días en heladera.
       Hasta 6 meses en freezer.
-    observaciones: "SIN TACC (no apto celíacos)."
-    carpeta_imagenes: "trio-lingotes"
-    
-  - nombre: "LINGOTES INDIVIDUALES XL"
-    categoria: "Boxes"
-    descripcion: |
+    observaciones: SIN TACC (no apto celíacos).
+    carpeta_imagenes: trio-lingotes
+  - nombre: LINGOTES INDIVIDUALES XL
+    categoria: Boxes
+    descripcion: >
       Consultar por diferentes opciones disponibles: 
+
       Tarta caramel, cheesecake frutos rojos, cacao, nuez y naranja, cheesecake matcha y frambuesas, tarta cacao y avellanas.
+
       Todas las bases de las piezas son RAW, elaboradas a partir de frutos secos, semillas , coco, cacao, endulzadas con dátiles y fruta.
     presentaciones:
-      - tamaño: "Único"
-        medida: "Lingote de 4X16 cm"
-        rinde: "1 barra"
-        precio: "$18.000"
+      - tamaño: Único
+        medida: Lingote de 4X16 cm
+        rinde: 1 barra
+        precio: $18.000
     conservacion: |
       3/4 días en heladera.
       Hasta 6 meses en freezer.
-    observaciones: "SIN TACC (no apto celíacos)."
-    carpeta_imagenes: "lingotes-xl"
-
-  - nombre: "Box desayuno"
-    categoria: "Boxes"
+    observaciones: SIN TACC (no apto celíacos).
+    carpeta_imagenes: lingotes-xl
+  - nombre: Box desayuno
+    categoria: Boxes
     descripcion: |
       La caja incluye:
       1 tarta individual (8 cm).
