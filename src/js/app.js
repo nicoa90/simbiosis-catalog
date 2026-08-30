@@ -67,14 +67,48 @@ async function initCatalog() {
     if (data.intro && data.intro.trim() !== '') {
       const intro = document.createElement('div');
       intro.className = 'catalog-intro';
+
+      // Two-column grid: image slot on the left, copy on the right.
+      const grid = document.createElement('div');
+      grid.className = 'catalog-intro-grid';
+
+      // Image slot on the left: show the chosen cover photo, or a placeholder.
+      const imageSlot = document.createElement('div');
+      imageSlot.className = 'intro-image';
+
+      if (data.intro_imagen && String(data.intro_imagen).trim() !== '') {
+        const img = document.createElement('img');
+        img.className = 'intro-image-img';
+        img.src = data.intro_imagen;
+        img.alt = 'Imagen de portada — Simbiosis Cocina';
+        img.loading = 'lazy';
+        img.onload = function () {
+          sendHeight();
+        };
+        imageSlot.appendChild(img);
+      } else {
+        const placeholder = document.createElement('div');
+        placeholder.className = 'intro-image-placeholder';
+        placeholder.textContent = 'Imagen de portada (pendiente)';
+        imageSlot.appendChild(placeholder);
+      }
+
+      grid.appendChild(imageSlot);
+
+      // Copy column with paragraphs separated by blank lines.
+      const copy = document.createElement('div');
+      copy.className = 'intro-copy';
+
       data.intro.split(/\n\n+/).forEach(function (p) {
         const trimmed = p.trim();
-        if (trimmed) {
-          const para = document.createElement('p');
-          para.textContent = trimmed;
-          intro.appendChild(para);
-        }
+        if (!trimmed) return;
+        const para = document.createElement('p');
+        para.textContent = trimmed;
+        copy.appendChild(para);
       });
+
+      grid.appendChild(copy);
+      intro.appendChild(grid);
       app.appendChild(intro);
     }
 

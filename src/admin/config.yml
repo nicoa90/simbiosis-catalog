@@ -20,6 +20,13 @@ collections:
             rows: 8
             hint: "Texto que aparece arriba del catálogo. Separá párrafos con una línea vacía."
 
+          - label: "Imagen de portada (opcional)"
+            name: "intro_imagen"
+            widget: "image"
+            required: false
+            choose_url: false
+            hint: "Foto que acompaña la introducción. Se muestra a la izquierda del texto (arriba en celular). Si la dejás vacía, no se muestra."
+
           - label: "Productos"
             name: "productos"
             widget: "list"
