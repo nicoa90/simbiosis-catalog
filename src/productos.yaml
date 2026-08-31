@@ -203,11 +203,11 @@ productos:
       - tamaño: Grande
         medida: 22 cm
         rinde: 8/16 porciones
-        precio: $89.000
+        precio: $95.000
       - tamaño: Mediano
         medida: 18 cm
         rinde: 8/12 porciones
-        precio: $72.000
+        precio: $79.000
     conservacion: |
       3/4 días en heladera.
       Hasta 6 meses en freezer.
